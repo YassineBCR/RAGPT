@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAGPT - Assistance Documentaire</title>
+    <title>Ma Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>RAGPT - Assistance Documentaire</h1>
-    <form action="/process_document" method="post" enctype="multipart/form-data">
-        <label for="question">Posez votre question :</label><br>
-        <input type="text" id="question" name="question"><br><br>
-        <label for="document">Téléchargez votre document :</label><br>
-        <input type="file" id="document" name="document"><br><br>
-        <input type="submit" value="Envoyer">
-    </form>
+    <h1>Bienvenue sur ma page</h1>
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
